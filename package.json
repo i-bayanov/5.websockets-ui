@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node .",
-    "start:dev": "nodemon",
+    "start:dev": "npm run browser && nodemon",
+    "browser": "start http://localhost:8181",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrei Auchynnikau",
